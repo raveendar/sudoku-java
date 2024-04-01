@@ -4,9 +4,9 @@ This is a Sudoku game project developed using Java backend without MVC framework
 ).  Grid generated using mocked data. User Input's validation done on the server side
 
 ### Prerequisite
-Java 17
-Maven 3.6.3
-Docker
+* Java 17
+* Maven 3.6.3
+* Docker
 
 ### Build
 
@@ -15,18 +15,18 @@ git clone https://github.com/raveendar/sudoku-java.git
 cd sudoku-java
 mvn install
 
-Create docker image
+* Create docker image
 docker image build -t sudoku-java-jar:latest .
 ```
 
 ### Run the server
 
 ```shell
-Run as Java Application
+* Run as Java Application
 cd target
 java -cp "sudoku-0.0.1-SNAPSHOT.jar;lib/*" Server
 
-Run as Docker Application
+* Run as Docker Application
 docker run --publish 8080:8080 sudoku-java-jar:latest
 
 ```
